@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="publish">
+        <input type='text' name='name' id='name' placeholder='Введите ваше имя' /></br>
+        <input type=text name='age' id='num' placeholder='Введите ваш возраст' /></br>
+        <label for="start">Введите свою дату рождения</label></br>
+        <input type="date" id="start" name="trip-start" value="2021-01-09" min="1940-01-01" max="2021-01-15"></br>
+        <label for="education">Ваше образование</label></br>
+        <select name="user_Education" id="Ed">
+            <option value="Школьное">Школьное</option>
+            <option value="Среднее">Среднее</option>
+            <option value="Высшее">Высшее</option>
+        </select></br>
+        <label for="gender">Ваш пол</label></br>
+        <input type="radio" name="sex" id="gender" value="мужской">мужской
+        <input type="radio" name="sex" id="gender" value="женский">женский
+        <p><input type="submit" value="Отправить" id="myBtn"></input></p>
+
+    </form>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
