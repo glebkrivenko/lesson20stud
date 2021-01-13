@@ -10,29 +10,43 @@
 
 <body>
 
-    <form name="publish">
-        <input type='text' name='name' id='name' placeholder='Введите ваше имя' /></br>
-        <input type=text name='age' id='num' placeholder='Введите ваш возраст' /></br>
-        <label for="start">Введите свою дату рождения</label></br>
-        <input type="date" id="start" name="trip-start" value="2021-01-09" min="1940-01-01" max="2021-01-15"></br>
-        <label for="education">Ваше образование</label></br>
-        <select name="user_Education" id="Ed">
+    <form id="form">
+        <label for="name">Имя:</label>
+        <input type='text' id='name' placeholder='Введите ваше имя' />
+        <small class="error__text">Пустое поле, введите имя</small>
+        </br>
+        </br>
+        <label for="age">Возраст:</label>
+        <input type=text id='age' placeholder='Введите ваш возраст' /></br>
+        </br>
+        </br>
+        <label for="start">Дата рождения:</label>
+        <input type="date" id="birth" name="trip-start" value="2021-01-09" min="1940-01-01" max="2021-01-15"></br>
+        </br>
+        </br>
+        <label for="education">Ваше образование:</label>
+        <select name="user_Education" id="ed">
             <option value="Школьное">Школьное</option>
             <option value="Среднее">Среднее</option>
             <option value="Высшее">Высшее</option>
-        </select></br>
-        <label for="gender">Ваш пол</label></br>
-        <input type="radio" name="sex" id="gender" value="мужской">мужской
-        <input type="radio" name="sex" id="gender" value="женский">женский
-        <p><input type="submit" value="Отправить" id="myBtn"></input></p>
+        </select>
+        </br>
+        </br>
+        <label for="gender">Ваш пол:</label></br>
+        <input type="radio" value="Men" name="gender" checked>Мужской
+        <input type="radio" value="Woman" name="gender">Женский
+        </br>
+        </br>
+        <button type="submit" id="submitBtn">Отправить</button>
 
-    </form>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
+        <div class="modal">
+            <div class="modal__wrapper">
+                <button id="closeBtn">Закрыть</button>
+                <div class="modal__content"></div>
+            </div>
         </div>
+    </form>
 
-    </div>
     <script src="index.js"></script>
 </body>
 
